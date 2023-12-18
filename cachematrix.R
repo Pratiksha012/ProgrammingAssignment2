@@ -1,7 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
 ##This function will create a matrix object that caches its inverse
 makeCacheMatrix <- function(x = matrix()) { ##defining argument with default mode of matrix"
         inv<-NULL ##initializing inverse as NULL
@@ -14,8 +10,6 @@ makeCacheMatrix <- function(x = matrix()) { ##defining argument with default mod
         getinverse<-function()inv ##gets the value of inverse
         list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
-        
-## Write a short comment describing this function
 ##This function calculates the inverse that is returned by makeCacheMatrix 
 ##If the inverse is already calculated then cacheSolve will get the inverse from cache
 cacheSolve <- function(x, ...) {
